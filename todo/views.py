@@ -17,7 +17,7 @@ class TodoView(APIView):
     "todo" items
     """
 
-    permissions_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
 
     def get(self, request, pk=None):
         """
